@@ -7,15 +7,18 @@ const ProductDisplay = ({ products }: { products: productDataMap[] }) => {
     <div>
       <h2 className={styles.header}>Explore our latest drops</h2>
       <div className={styles.previewCardContainer}>
-        {products.map(({ brandName, productName, price, brandProductId }) => (
-          <ProductPreviewCard
-            brandName={brandName}
-            productName={productName}
-            price={price}
-            key={price}
-            brandProductId={brandProductId}
-          />
-        ))}
+        {products.map(
+          ({ brandName, productName, price, brandProductId, productId }) => (
+            <ProductPreviewCard
+              brandName={brandName}
+              productName={productName}
+              price={price}
+              key={productId}
+              brandProductId={brandProductId}
+              productId={productId}
+            />
+          )
+        )}
       </div>
     </div>
   );
