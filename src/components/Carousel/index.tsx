@@ -37,7 +37,7 @@ const Carousel = ({ imageSrcs }: { imageSrcs: string[] }) => {
           className={
             selectedImage === 0 ? styles.disabledButton : styles.chevronButton
           }
-          aria-disabled={selectedImage === 0}
+          disabled={selectedImage === 0}
           onClick={() => setSelectedImage(selectedImage - 1)}
         >
           <Image src={ChevronLeft} alt="Chevron facing left" />
@@ -47,7 +47,7 @@ const Carousel = ({ imageSrcs }: { imageSrcs: string[] }) => {
           className={
             selectedImage === 2 ? styles.disabledButton : styles.chevronButton
           }
-          aria-disabled={selectedImage === 2}
+          disabled={selectedImage === 2}
           onClick={() => setSelectedImage(selectedImage + 1)}
         >
           <Image src={ChevronRight} alt="Chevron facing right" />

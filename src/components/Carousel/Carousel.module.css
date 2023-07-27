@@ -15,6 +15,9 @@
   background-color: #ffffff;
   border: none;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chevronButton:hover {
@@ -27,4 +30,24 @@
   background-color: #ffffff;
   border: none;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disabledButton > img {
+  opacity: 40%;
+}
+
+.carouselContainer {
+  min-width: 50%;
+  max-width: 50%;
+  height: 100%;
+}
+
+@media (max-width: 700px) {
+  .carouselContainer {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
