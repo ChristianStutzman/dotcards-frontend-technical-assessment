@@ -1,0 +1,20 @@
+.viewCartButton {
+  padding: 10px 25px;
+  border: 2px solid #201b21;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #e9ebee;
+}
+
+.viewCartButton:hover {
+  filter: brightness(90%);
+}
+
+.buttonText {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #201b21;
+  margin-left: 8px;
+}
