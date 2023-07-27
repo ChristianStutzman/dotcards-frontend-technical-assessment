@@ -19,7 +19,7 @@ const Footer = () => {
         <Link href="https://www.instagram.com/dot.cards/" target="_blank">
           <Image src={instagramLogo} alt="Instagram logo" />
         </Link>
-        <Link href="https://twitter.com" target="_blank">
+        <Link href="https://twitter.com/DotCardsUSA" target="_blank">
           <Image
             src={twitterLogo}
             alt="Twitter logo"
