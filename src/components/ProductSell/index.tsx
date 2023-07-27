@@ -7,6 +7,17 @@ import Image from "next/image";
 
 const ProductSell = ({ productData }: { productData: productDataMap }) => {
   const [quantity, setQuantity] = useState<number>(1);
+
+  const handleAddToCart = async () => {
+    await fetch("http://localhost:3000/api/bag", {
+      method: "POST",
+      body: JSON.stringify({
+        productId: productData.productId,
+        quantity,
+      }),
+    });
+  };
+
   return (
     <div className={styles.productSellContainer}>
       <div className={styles.productInfoContainer}>
@@ -39,9 +50,9 @@ const ProductSell = ({ productData }: { productData: productDataMap }) => {
             <Image src={PlusIcon} alt="Plus icon" />
           </button>
         </div>
-        <div className={styles.addToCartButton}>
+        <button className={styles.addToCartButton} onClick={handleAddToCart}>
           <span>Add to Cart</span>
-        </div>
+        </button>
       </div>
     </div>
   );
