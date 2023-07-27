@@ -1,0 +1,77 @@
+.heroContainer {
+  padding: 50px;
+  background-color: #eaeeef;
+  border-radius: 20px;
+  display: flex;
+}
+
+.discount {
+  color: #ec5e2a;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+}
+
+.saleText {
+  color: #201b21;
+  font-size: 50px;
+  line-height: 73px;
+  font-weight: 400;
+  margin: 10px 0 20px 0;
+}
+
+.subText {
+  color: #67698e;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.saleButton {
+  background-color: #201b21;
+  border-radius: 15px;
+  display: flex;
+  padding: 20px 80px;
+  align-items: center;
+  width: fit-content;
+}
+
+.saleButtonLink {
+  justify-content: flex-start !important;
+}
+
+.saleButton > span {
+  margin-right: 10px;
+}
+
+.innerContainerLeft,
+.innerContainerRight {
+  width: 50%;
+}
+.heroImage {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .heroContainer {
+    flex-direction: column-reverse;
+  }
+
+  .innerContainerLeft,
+  .innerContainerRight {
+    width: 100%;
+  }
+
+  .discount,
+  .saleText,
+  .subText {
+    text-align: center;
+  }
+
+  .saleButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
