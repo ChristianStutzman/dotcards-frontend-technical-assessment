@@ -9,7 +9,7 @@ const CheckoutDisplay = ({ cartData }: { cartData: CartItem[] }) => {
     0
   );
   const salesTax: number = subtotal * 0.0725;
-  const shipping: number = 20;
+  const shipping: number = cartData.length ? 20 : 0;
   const discount: number = subtotal * 0.25;
   const total: number = subtotal + salesTax + shipping - discount;
 

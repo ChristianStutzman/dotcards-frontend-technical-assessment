@@ -29,7 +29,7 @@ const CartDisplay = ({
     });
 
     const result = await response.json();
-    console.log({ result });
+
     setCartData(result.data);
   };
 

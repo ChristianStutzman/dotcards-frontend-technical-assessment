@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #e9ebee;
+  background-color: #f8f8f8;
   align-items: center;
+  border-bottom: 3px solid #e5e7ea;
 }
 
 @media (min-width: 700px) {
