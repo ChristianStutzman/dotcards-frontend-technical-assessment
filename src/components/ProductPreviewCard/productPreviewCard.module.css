@@ -1,0 +1,20 @@
+.brandNameText {
+  font-size: 20px;
+  color: #201b21;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.productNameText {
+  font-size: 16px;
+  color: #67696e;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.priceText {
+  font-size: 18px;
+  color: #201b21;
+  font-weight: 500;
+  margin-top: 10px;
+}
