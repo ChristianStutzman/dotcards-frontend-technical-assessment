@@ -5,6 +5,7 @@ export interface productDataMap {
   productDescription: string;
   productSpecs: string[];
   brandProductId: number | null;
+  productId: number;
 }
 
 export const productData: productDataMap[] = [
@@ -21,6 +22,7 @@ export const productData: productDataMap[] = [
       "imported",
     ],
     brandProductId: null,
+    productId: 1,
   },
   {
     brandName: "Nike",
@@ -35,6 +37,7 @@ export const productData: productDataMap[] = [
       "imported",
     ],
     brandProductId: 1,
+    productId: 2,
   },
   {
     brandName: "Nike",
@@ -49,6 +52,7 @@ export const productData: productDataMap[] = [
       "imported",
     ],
     brandProductId: 2,
+    productId: 3,
   },
   {
     brandName: "adidas",
@@ -63,5 +67,6 @@ export const productData: productDataMap[] = [
       "imported",
     ],
     brandProductId: null,
+    productId: 4,
   },
 ];

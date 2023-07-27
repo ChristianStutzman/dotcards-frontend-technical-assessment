@@ -13,7 +13,7 @@ const Hero = () => {
         <h4 className={styles.subText}>
           Discover our summer styles with discount
         </h4>
-        <Link href="/product1" className={styles.saleButtonLink}>
+        <Link href="/product/1" className={styles.saleButtonLink}>
           <div className={styles.saleButton}>
             <span>Shop Now</span>
             <Image src={arrowRight} alt="Arrow facing right" />

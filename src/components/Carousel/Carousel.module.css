@@ -1,0 +1,30 @@
+.carouselImage {
+  position: relative !important;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.chevronButton {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+}
+
+.chevronButton:hover {
+  cursor: pointer;
+}
+
+.disabledButton {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+}
