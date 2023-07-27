@@ -22,9 +22,10 @@ const Hero = () => {
       </div>
       <div className={styles.innerContainerRight}>
         <Image
-          src={heroImage}
+          src="/images/hero-desktop.png"
           alt="Green and white Nike sneaker"
           className={styles.heroImage}
+          fill
         />
       </div>
     </div>
