@@ -3,6 +3,7 @@ import logoDark from "@/resources/icons/logo-dark.svg";
 import Image from "next/image";
 import Link from "next/link";
 import ViewCartButton from "../ViewCartButton";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   return (
