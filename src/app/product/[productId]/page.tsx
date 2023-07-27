@@ -27,16 +27,16 @@ const ProductPage = ({ params }: { params: { productId: number } }) => {
         { method: "GET" }
       );
       const data = await fetchedProductData.json();
-      console.log({ data, productId });
+
       const singleProduct = data.find(
         (product: productDataMap) => product.productId === productId
       );
-      console.log({ singleProduct });
+
       setProductData(singleProduct);
     };
     fetchData();
   }, [productId]);
-  console.log({ productData });
+
   return (
     <main className={styles.main}>
       <div className={styles.container}>
